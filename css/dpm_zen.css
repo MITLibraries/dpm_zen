@@ -353,14 +353,14 @@ body.toc ul#n #toc, body.toc ul#n #toc a
 color:#6F8531; background:#fff; text-decoration:none;
 }
 
-/*  code for timeline section  */
+/* Old code for timeline section
 
 .timeline {
 	font: 8pt/11pt verdana;
 	color: #333333;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	}
+}
 
 .year-bg {
 background: url(/sites/all/themes/dpm_zen/images/year-bg.gif) no-repeat;
@@ -371,7 +371,7 @@ height: 18px;}
 .year-padding {padding-left: 22px;}
 
 .orange-image {
-/*background-image:url(/sites/all/themes/dpm_zen/images/orange.gif);*/
+/* background-image:url(/sites/all/themes/dpm_zen/images/orange.gif);
 border-left: 4px solid #FAA735;
 }
 
@@ -379,6 +379,52 @@ td.timelineSections {
 	padding-bottom: 3px;
 	}
 /*  end code for timeline section  */
+
+/* Rebuilt Timeline (Views version) */
+.page-timeline .view-header ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.page-timeline .view-header li {
+	flex: 0 1 auto;
+	align-self: flex-start;
+/*
+	display: inline;
+*/
+}
+.page-timeline .view-header a {
+	text-decoration: none;
+	font-weight: normal;
+	background: #D9E3BC;
+	padding: 2px;
+}
+.page-timeline .view-header a:hover,
+.page-timeline .view-header a:focus {
+	background: #eea643;
+	color: black;
+}
+.page-timeline .view-content h3 {
+	background: #b3c779;
+	border-bottom: 2px solid #6f8531;
+	border-top: 2px solid #6f8531;
+	clear: both;
+	color: black;
+	font-size: 1rem;
+	font-weight: normal;
+}
+.admin-menu.page-timeline .view-content .timeline:hover {
+	background: #D9E3BC;
+	border: 1px solid #6f8531;
+	margin: -1px -6px;
+	padding: 5px;
+}
+/* End Rebuilt Timeline (Views version) */
 
 /* END DPM IMPORTED STYLES */
 
